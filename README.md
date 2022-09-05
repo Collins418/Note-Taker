@@ -15,6 +15,8 @@ Please use the links in the table below to navigate the ReadMe contents.
   - [User Story](#user-story)
       - [Summary](#summary)
   - [Included in code](#included-in-code)
+  - [Website](#website)
+  - [Deployed on](#deployed-on)
 
 
 ## User Story
@@ -28,7 +30,6 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
   Demo of the application Video and deploy link *
 
 #### Summary 
-
 ```
 The application frontend has already been created, it's your job to build the backend and connect the two.
 The following HTML (5) routes should be created:
@@ -53,3 +54,11 @@ Two JSON packages
 TWO HTML Pages
 `One CSS Page`
 `One JSON file`
+
+## Website
+- [Node.js](https://nodejs.org/en/)
+- [Express](https://expressjs.com/)
+- [Bootstrap 4.5](https://getbootstrap.com/)
+- [Font Awesome 5](https://fontawesome.com/)
+## Deployed on
+- [Heroku](https://www.heroku.com/home)
