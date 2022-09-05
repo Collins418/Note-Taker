@@ -30,7 +30,6 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
 #### Summary 
 
 ```
-Summary
 The application frontend has already been created, it's your job to build the backend and connect the two.
 The following HTML (5) routes should be created:
 1 - GET /notes - Should return the notes.html file.
@@ -44,10 +43,13 @@ The following API routes should be created:
 
 ## Included in code
 Two JS Pages
-Index.js
-Server.js
+
+`Index.js`
+`Server.js`
+
 Two JSON packages
-Node Modules Folder
+`Node Modules Folder`
+
 TWO HTML Pages
-One CSS Page
-One JSON file
+`One CSS Page`
+`One JSON file`
