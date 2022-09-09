@@ -1,0 +1,22 @@
+{
+  "name": "note-taker",
+  "version": "1.0.0",
+  "description": "\"\"",
+  "main": "server.js",
+  "scripts": {
+    "test": "\"\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Collins418/Note-Taker.git"
+  },
+  "keywords": [
+    "[]"
+  ],
+  "author": "\" LaTavya Collins\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Collins418/Note-Taker/issues"
+  },
+  "homepage": "https://github.com/Collins418/Note-Taker#readme"
+}
