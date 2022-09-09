@@ -4,6 +4,7 @@
   "description": "\"\"",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "test": "\"\""
   },
   "devDependencies": {},
@@ -21,3 +22,4 @@
   },
   "homepage": "https://github.com/Collins418/Note-Taker#readme"
 }
+
