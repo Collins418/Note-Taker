@@ -7,7 +7,10 @@
     "start": "node server.js",
     "test": "\"\""
   },
-  "devDependencies": {},
+  "engines": {
+    "npm": "8.18.0",
+    "node": "16.16.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Collins418/Note-Taker.git"
