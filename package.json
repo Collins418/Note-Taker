@@ -6,6 +6,7 @@
   "scripts": {
     "test": "\"\""
   },
+  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Collins418/Note-Taker.git"
