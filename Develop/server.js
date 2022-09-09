@@ -1,22 +1,25 @@
-// dependencies area//
-const express = require ('express');
+// import
+const express = require("express");
 
-
-// orinigal port area//
-const PORT= process.env.PORT||3000;
-
+//  express server area
 const app = express();
 
-// Sets up Express area//
+// whuch port
+const PORT = process.env.PORT || 3000;
+
+// add middleware part - stackflow help
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static('public'));
 
-//http://expressjs.com/en/guide/routing.html//
-require('./routes.js')(app);
+app.use(express.static("public"));
 
-// Start server section//
-app.listen(PORT, () => {
-  console.log(`Server is listening on port ${PORT}`)
-})
+const apiRoutes = require("./routes/apiroutes");
+const htmlRoutes = require("./routes/htmlroutes");
+app.use(apiRoutes);
+app.use(htmlRoutes);
+
+// server starter
+app.listen(PORT, function () {
+  console.log("server is listening on http://localhost:" + PORT);
+});
 
