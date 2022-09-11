@@ -125,7 +125,7 @@ const renderNoteList = async (notes) => {
 
   let noteListItems = [];
 
-  // return area
+  // return area below
   const createLi = (text, delBtn = true) => {
     const liEl = document.createElement('li');
     liEl.classList.add('list-group-item');
@@ -181,3 +181,5 @@ if (window.location.pathname === '/notes') {
 }
 
 getAndRenderNotes();
+
+module.exports = require('express');

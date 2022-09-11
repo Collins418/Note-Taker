@@ -1,11 +1,9 @@
-// import
-const express = require("express");
-
+// import below
+const express = require('express')
 //  express server area
 const app = express();
-
-// whuch port
-const PORT = process.env.PORT || 3000;
+// which port
+const PORT = process.env.PORT ||3000;
 
 // add middleware part - stackflow help
 app.use(express.urlencoded({ extended: true }));
