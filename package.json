@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Collins418/Note-Taker#readme",
   "dependencies": {
+    "express": "^4.18.1",
     "v8-compile-cache": "^2.3.0"
   }
 }
