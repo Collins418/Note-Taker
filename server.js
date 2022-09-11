@@ -1,7 +1,7 @@
 // import below//
 const express = require ('express');
 
-// Set 1st por.//
+// Set 1st port//
 const PORT = process.env.PORT || 3000;
 
 const app = express();
@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(express.static('public'));
 
 //Router area//
-require('./routes/routes')(app);
+require('./Develop/routes/routes')(app);
 
 // Start  server//
 app.listen(PORT, () => {

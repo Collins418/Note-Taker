@@ -4,7 +4,7 @@ const path = require('path');
 module.exports = app => {
 
     // Setup area//
-    fs.readFile("db/db.json","utf8", (err, data) => {
+    fs.readFile("./Develop/db/db.json","utf8", (err, data) => {
 
         if (err) throw err;
 
@@ -12,7 +12,7 @@ module.exports = app => {
 
         // API route setup area//
         app.get("/", function(req, res) {
-            res.json(path.join(__dirname, "public/index.html"));
+            res.json(path.join(__dirname, "../public/index.html"));
           });
 
         // notes//
