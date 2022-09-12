@@ -12,7 +12,7 @@ module.exports = app => {
 
         // API route setup area//
         app.get("/", function(req, res) {
-            res.json(path.join(__dirname, "../public/index.html"));
+            res.json(path.join(__dirname,"./app/Develop/public/notes.html"));
           });
 
         // notes//
@@ -46,12 +46,12 @@ module.exports = app => {
 
         // show notes.html 
         app.get('/notes', function(req,res) {
-            res.sendFile(path.join(__dirname, "./Develop/public/notes.html"));
+            res.sendFile(path.join(__dirname, "./app/Develop/public/notes.html"));
         });
         
         // show index.html 
         app.get('*', function(req,res) {
-            res.sendFile(path.join(__dirname, "./Develop/public/index.html"));
+            res.sendFile(path.join(__dirname,"./app/Develop/public/index.html"));
         });
 
         //updates files//
