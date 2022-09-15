@@ -4,7 +4,7 @@ const path = require('path');
 module.exports = app => {
 
     // Setup area//
-    fs.readFile('./Develop/db/db.json','utf8', (err, data) => {
+    fs.readFile(path.join(__dirname,'../db/db.json'),'utf8', (err, data) => {
 
         if (err) throw err;
 
@@ -12,7 +12,7 @@ module.exports = app => {
 
         // API route setup area//
         app.get('/', function(req, res) {
-            res.json(path.join(__dirname,'./Develop/public/index.html'));
+            res.json(path.join(__dirname,'../public/index.html'));
           });
 
         // notes//
@@ -46,17 +46,17 @@ module.exports = app => {
 
         // show notes.html 
         app.get('/notes', function(req,res) {
-            res.sendFile(path.join(__dirname, './Develop/public/notes.html'));
+            res.sendFile(path.join(__dirname, '../public/notes.html'));
         });
         
         // show index.html 
         app.get('*', function(req,res) {
-            res.sendFile(path.join(__dirname,'./Develop/public/index.html'));
+            res.sendFile(path.join(__dirname,'../public/index.html'));
         });
 
         //updates files//
         function updateDb() {
-            fs.writeFile('db/db.json',JSON.stringify(notes,'\t'),err => {
+            fs.writeFile(path.join(__dirname,'../db/db.json'),JSON.stringify(notes,'\t'),err => {
                 if (err) throw err;
                 return true;
             });
